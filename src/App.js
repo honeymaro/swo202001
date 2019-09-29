@@ -20,13 +20,7 @@ class App extends Component {
         <Header />
         <ToastContainer position={toast.POSITION.TOP_CENTER} />
         <Switch>
-          <Route path='/' exact component={Main} />
-          <Route path='/auth/signin' exact component={SignIn} />
-          <Route path='/auth/signup' exact component={SignUp} />
-          <PrivateRoute path='/payment/charge' exact component={Charge} />
-          <PrivateRoute path='/payment/history' exact component={History} />
-          <PrivateRoute path='/users/me' exact component={Me} />
-          <PrivateRoute path='/admin/owdin' exact component={Admin} />
+          {/* <Route path='/' exact component={Main} /> */}
         </Switch>
         <Footer />
       </div>
