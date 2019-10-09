@@ -1,25 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createBrowserHistory } from 'history';
-import { Provider } from 'mobx-react';
-import { RouterStore, syncHistoryWithStore } from 'mobx-react-router';
-import { Router } from 'react-router';
-import { AuthStore } from 'stores/auth';
+import React from "react";
+import ReactDOM from "react-dom";
+import { createBrowserHistory } from "history";
+import { Provider } from "mobx-react";
+import { RouterStore, syncHistoryWithStore } from "mobx-react-router";
+import { Router } from "react-router";
+import { AuthStore } from "stores/auth";
 
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
 const browserHistory = createBrowserHistory();
 const routingStore = new RouterStore();
 
 const authStore = new AuthStore();
 
-
 const stores = {
   // Key can be whatever you want
   routing: routingStore,
-  auth: authStore,
+  auth: authStore
   // ...other stores
 };
 
@@ -31,7 +30,7 @@ ReactDOM.render(
       <App />
     </Router>
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById("root")
 );
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

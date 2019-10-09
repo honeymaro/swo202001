@@ -1,5 +1,5 @@
 {
-  "name": "APPNAME",
+  "name": "app-name",
   "version": "0.1.0",
   "homepage": "https://homepage.com/",
   "private": true,
@@ -7,6 +7,7 @@
     "axios": "^0.19.0",
     "comma-number": "^2.0.1",
     "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.4.0",
     "history": "^4.9.0",
     "mobx": "^5.13.0",
     "mobx-react": "^6.1.1",
@@ -29,9 +30,6 @@
     "build": "cp ./.env.development ./.env && react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
