@@ -5,6 +5,7 @@ import { Provider } from "mobx-react";
 import { RouterStore, syncHistoryWithStore } from "mobx-react-router";
 import { Router } from "react-router";
 import { AuthStore } from "stores/auth";
+import { BoardStore } from "stores/board";
 
 import "./index.css";
 import App from "./App";
@@ -14,11 +15,13 @@ const browserHistory = createBrowserHistory();
 const routingStore = new RouterStore();
 
 const authStore = new AuthStore();
+const boardStore = new BoardStore();
 
 const stores = {
   // Key can be whatever you want
   routing: routingStore,
-  auth: authStore
+  auth: authStore,
+  board: boardStore
   // ...other stores
 };
 
