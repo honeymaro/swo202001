@@ -13,7 +13,7 @@
     "mobx": "^5.13.0",
     "mobx-react": "^6.1.1",
     "mobx-react-router": "^4.0.7",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.13.0",
     "randomcolor": "^0.5.4",
     "react": "^16.8.6",
